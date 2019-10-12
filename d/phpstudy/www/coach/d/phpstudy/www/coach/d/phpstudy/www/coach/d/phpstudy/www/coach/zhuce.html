@@ -1,0 +1,143 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>	</title>
+	<link rel="stylesheet" href="css/zhuce.css">
+</head>
+<body>
+	<div id="bigbox">
+		<div id="boxa">
+		<div id="rightbox">
+			<div id="creat">
+				<h1>创建您的个人账户，获取更多专属资讯</h1>
+			<div id="bott">
+				<div id="p1">您的称谓</div>
+				<div id="xmcw">
+
+					<input type="text" placeholder="姓">
+					<input type="text" placeholder="名">
+					<select id="">
+						<option value="">称谓</option>
+						<option value="">先生</option>
+						<option value="">女士</option>
+					</select>
+				</div>
+				<input type="text" id="tlinput" placeholder="请输入您的手机号">
+				
+				
+
+				<input type="text" placeholder="请输入手机号">
+				<div>
+					<input type="text" placeholder="请输入图形验证码">
+				<img src="img/yzm.png" alt="">
+				</div>
+				
+				<input type="text" placeholder="请输入短信验证码"><a href="#" id="dx">发送短信验证码</a>
+				<input type="text" placeholder="请输入您的密码" id="tlinput">
+				<div id="text">密码长度必须超过8个字符，并包含字母和数字</div>
+				<div class="fl">
+     <select class="ipt" id="nian"></select>
+     <label class="surname"></label>
+     <select class="ipt" id="yue"></select>
+     <label class="surname"></label>
+     <select class="ipt" id="ri"><option>选择</option></select>
+     <label class="surname"></label>
+</div>
+
+				
+				<div id="text">填写您的生日可获取生日礼券（可选）</div>
+				
+				<div id="jz">
+					<input type="radio">我已仔细阅读并同意COACH <a href="#">安全与隐私政策</a>
+				</div>
+				
+				<a href="">
+				<input type="button" value="注册" class="buttona">
+				</a>
+			</div>
+		</div>
+		</div>
+		<div id="leftbox">	
+				<div id="creat">
+					<h1>欢迎回来</h1>
+					<p>请登录并查看您的账户</p>
+					<a href="">
+						<input type="button" value="登录" class="buttona">
+					</a>
+				</div>
+			</div>
+			</div>
+			
+		
+	</div>
+	
+	
+</body>
+</html>
+<script type="text/javascript" src="js/jquery-1.8.3.js"></script>
+<script>
+	//年
+var year = $('#nian').find("option:selected").val();
+//月
+var month = $('#yue').find("option:selected").val();
+// 日
+var day = $('#ri').find("option:selected").val();
+
+	var dateOption = (function () {
+
+    var option = { 0: "nian", 1: "yue", 2: "ri" };
+    function renderOption(min, max) {
+        var i = min, optionHtml = "";
+        for (; i < max; i++) {
+            optionHtml += "<option value='" + i + "'>" + i + "</option>";
+        }
+
+        optionHtml = "<option value='-1'>选择</option>" + optionHtml;
+
+        return optionHtml;
+    }
+    function getTotalDayByDate(year, month) {
+        var dayCount = 0;
+        switch (month) {
+            case 1:
+            case 3:
+            case 5:
+            case 7:
+            case 8:
+            case 10:
+            case 12:
+                dayCount = 31;
+                break;
+            case 4:
+            case 6:
+            case 9:
+            case 11:
+                dayCount = 30;
+                break;
+            case 2:
+                //闰年计算
+                if ((year % 4 == 0 && year % 100 != 0) || (year % 400 == 0))
+                    dayCount = 29;
+                else
+                    dayCount = 28;
+                break;
+        }
+        return dayCount;
+    }
+    $("#nian").empty().append(renderOption(1920, 2020));
+    $("#yue").empty().append(renderOption(1, 13));
+    $("#yue").change(function () {
+        var year = parseInt($("#nian").val());
+        var month = parseInt($(this).val());
+        var dayCount = getTotalDayByDate(year, month);
+        $("#ri").siblings("span").text("选择");
+        $("#ri").empty().append(renderOption(1, dayCount + 1));
+    });
+    $("#nian,#yue,#ri").change(function () {
+        var val = $(this).val();
+        $(this).siblings("span").text(val);
+    });
+})();
+
+</script>

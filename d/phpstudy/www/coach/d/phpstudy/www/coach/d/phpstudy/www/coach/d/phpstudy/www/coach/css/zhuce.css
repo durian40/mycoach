@@ -1,0 +1,172 @@
+body,p,ul,ol,dl,dd,h1,h2,h3,h4,h5,h6,hr,td,input,textarea{
+	margin:0;
+	padding:0;
+	
+}
+html,body{
+	height: 100%;
+}
+ul,ol,li{
+	list-style: none;
+}
+a{
+	text-decoration:none;
+	color:black; 
+}
+a:hover{
+	text-decoration: none;
+}
+img{
+	border:none;
+	display: block;
+}
+body{
+	font-family: inherit; 
+	
+}
+
+
+#bigbox{
+	width: 100%;
+	height: 600px;
+	padding:25px 0;
+	background-color:#f3f3f3;
+}
+#boxa{
+	width:60%;
+	margin: auto;
+}
+#boxa h1{
+	font-size: 16px;
+    margin-bottom: 15px;
+    font-weight: 400;
+}
+#boxa p{
+	padding: 0 17px;
+    margin-bottom: 10px;
+    color: #757575;
+    font-size: 16px;
+}
+#boxa .buttona{
+	
+    width: 100%;
+    height: 40px;
+    font-size: 14px;
+    color: #fff;
+    border: none;
+    background: #000;
+    margin: 20px 0 0;
+    /*line-height: 40px;*/
+    letter-spacing: 2px;
+}
+#leftbox{
+	width:49%;
+	background-color: white;
+	float: left;
+	text-align: center;
+}
+#creat{
+	width:80%;
+	background-color: white;
+	margin:8% auto;
+}
+#creat a{
+	margin-left: 5px;
+}
+#rightbox{
+
+    margin-right: 7px;
+    font-size: 14px;
+    background-color: #fff;
+	width:49%;
+	background-color: white;
+	float: left;
+	margin-left:1%;
+}
+#rightbox span{
+	color: #000;
+    padding-bottom: 2px;
+    margin: 30 0px;
+}
+#xmcw{
+	width: 100%;
+	display: flex;
+}
+#bott #xmcw input{
+	border: 1px solid #ccc;
+	width: 26%;
+    float: left;
+    height: 16px;
+    margin-right: 5%;
+}
+#text{
+	font-size: 12px;
+    color: #757575;
+    padding-bottom: 5px;
+}
+#xmcw select{
+	border: 1px solid #ccc;
+	width: 33%;
+    height: 36px;
+    margin-top: 5px;
+    float: left;
+}
+/*.tit{
+	width: 33%;
+	float: left;
+	border: 1px solid #ccc;
+	height: 36px;
+}*/
+#rightbox #spana{
+	border-bottom: 1px solid #000;
+}
+#rightbox input{
+	border: 1px solid #ccc;
+	padding: 8px 0 8px 5%;
+    line-height: 18px;
+    margin: 7px 0;
+    overflow: hidden;
+}
+#tlinput{
+	width: 95%;
+}
+#rightbox img{
+	display: inline-block;
+	width:35%;
+	height: 36px;
+	margin: -15px 0;
+}
+#bott #p1{
+	/*padding: 0 17px;
+    margin-bottom: 10px;*/
+    color: #757575;
+    font-size: 16px;
+    text-align: left;
+}
+#dx{
+	text-decoration: underline;
+}
+#jz{
+	text-align:left;
+}
+#jz a{
+	margin-left: 5px;
+}
+.fl{
+	width: 100%;
+	height: 36px;
+	display: flex;
+}
+.fl .ipt{
+	width: 30%;
+	height: 36px;
+	background-color: white;
+	float: left;
+	border: 1px solid #ccc;
+}
+.fl #yue{
+	margin: 0 5%;
+}
+#jz a{
+	text-decoration:underline;
+}
