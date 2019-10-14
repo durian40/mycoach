@@ -1,0 +1,81 @@
+body,
+p,
+ul,
+ol,
+dl,
+dd,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+hr,
+td,
+input,
+textarea {
+    margin: 0;
+    padding: 0;
+}
+
+html,
+body {
+    height: 100%;
+}
+
+ul,
+ol,
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+img {
+    border: none;
+    display: block;
+}
+
+body {
+    font-family: inherit;
+}
+
+#movie {
+    min-width: 1000px;
+    height: 630px;
+    #moviebox {
+        margin: 0 auto;
+        width: 90%;
+        height: 630px;
+        position: relative;
+        margin-top: 60px;
+        #zhezhao {
+            width: 400px;
+            overflow: hidden;
+            position: absolute;
+            z-index: 50;
+            top: 50px;
+            color: white;
+            left: 50px;
+            h1 {
+                text-align: left;
+                font-size: 50px;
+                margin-bottom: 15px;
+                color: #fff;
+            }
+            p {
+                text-align: left;
+                font-size: 19px;
+                line-height: 25px;
+                color: #fff;
+            }
+        }
+    }
+}
