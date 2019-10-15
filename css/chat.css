@@ -78,7 +78,8 @@ header {
       border: none;
       resize: none;
       float: left;
-      margin-top: 0.5px; }
+      margin-top: 0.5px;
+      outline: 0; }
     #chatbox #chatbottom #imgchat img {
       display: inline-block;
       width: 20px;
