@@ -1,158 +1,334 @@
-body, p, ul, ol, dl, dd, h1, h2, h3, h4, h5, h6, hr, td, input, textarea {
-  margin: 0;
-  padding: 0;
-  }
+body,
+p,
+ul,
+ol,
+dl,
+dd,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+hr,
+td,
+input,
+textarea {
+    margin: 0;
+    padding: 0;
+}
 
-html, body {
-  height: 100%; }
+html,
+body {
+    height: 100%;
+}
 
-ul, ol, li {
-  list-style: none; }
+ul,
+ol,
+li {
+    list-style: none;
+}
 
 a {
-  text-decoration: none;
-  color: black; }
+    text-decoration: none;
+    color: black;
+}
 
 a:hover {
-  text-decoration: none; }
+    text-decoration: none;
+}
 
 img {
-  border: none;
-  display: block; }
+    border: none;
+    display: block;
+}
 
 body {
-  font-family: inherit; 
-  }
+    font-family: inherit;
+}
 
+#spxq {
+    display: none;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(0, 0, 0, .6);
+    z-index: 1001;
+    #smallbox {
+        height: 547px;
+        width: 65%;
+        max-width: 1100px;
+        background: #f0f0f0;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        -webkit-transform: translate(-50%, -50%);
+        transform: translate(-50%, -50%);
+        border-radius: 3px;
+        padding: 1rem;
+        text-align: center;
+        padding: 16px;
+        #continbox {
+            width: 100%;
+            height: 100%;
+            z-index: 1;
+            #topcb {
+                img {
+                    float: right;
+                }
+            }
+            #leftcb {
+                height: 100%;
+                float: left;
+                width: 58%;
+                padding: 0 2%;
+                position: relative;
+                min-height: 443px;
+                ul {
+                    border: 2px solid white;
+                    position: absolute;
+                    top: 50%;
+                    left: 0;
+                    width: 49px;
+//                  height: 60px;
+                    transform: translate(10%, -50%);
+                    -webkit-box-pack: start;
+                    -ms-flex-pack: start;
+                    justify-content: flex-start;
+                    margin-left: -1%;
+                    margin-right: -1%;
+                    li {
+                        border-bottom: 2px solid white;
+                        width: 47px;
+                        height: 60px;
+                        padding: 6px 0;
+                        img {
+                            max-width: 100%;
+                            height: 95%;
+                            vertical-align: top;
+                        }
+                    }
+                }
+                #imgcb {
+                    margin-left: 40px;
+                    width: 90%;
+                    height: 100%;
+                    img {
+                        width: 100%;
+                        height: 100%;
+                    }
+                }
+            }
+            #rightcb {
+                float: right;
+                width: 40%;
+                height: 100%;
+                text-align: left;
+                font-size: 14px;
+                padding: 0 2% 2% 0;
+                h2{
+                  text-align: left;
+                  font-size: 24px;
+                  margin: 20px 0 12px;  
+                }
+                p{
+                    text-align: left;
+                    margin: 10px 0;
+                }
+                #cbp{
+                    
+                    color: #999;
+                }
+                div{
+                    margin: 20px 0 24px;
+                    font-size: 24px;text-align: left;
+                }
+               
+                ol {
+                    display: inline-block;
+                    width: 220px;
+                    height: 38px;
+                    margin-bottom: 10px;
+                    li {
+                        width: 38px;
+                        height: 38px;
+                        border-radius: 50%;
+                        padding: 3px;
+                        float: left;
+//                      border: 1px solid black;
+                        img {
+                            border-radius: 50%;
+                            width: 30px;
+                            height: 30px;
+                        }
+                    }
+                }
+                button{
+                    margin-top: 15px;
+                    border: 1px solid #000;
+                    height: 45px;
+                    width: 100%;
+                    height: 40px;
+                    font-size: 14px;
+                    color: #fff;
+                    border: none;
+                    background: #000;
+                    letter-spacing: 2px;
+                    cursor: pointer;
+                }
+                a{
+                    border-bottom: 1px solid #000;
+                    padding-bottom: 2px;
+                    text-decoration: none;
+                    background-color: transparent;
+                    font-size: 14px;
+                    margin-top: 5px;
+                    display: inline-block;
+                }
+            }
+        
+        }
+    }
+    #nextcb{
+            position: absolute;
+            top: 48%;
+            right: -30px;
+            width: 16px;
+            height: 30px;
+            cursor: pointer;
+            img{
+                border-style: none;
+                max-width: 100%;
+                vertical-align: top;
+            }
+        }
+}
 
-#titia{
-    margin-top:0;
+#titia {
+    margin-top: 0;
     z-index: 1;
-	width: 100%;
-  overflow: hidden;
-	background-color:white;
-	padding: 35px 0 30px;
-	#zhuti{
-	    overflow: hidden;
-	background-color: white;
-	margin: 0 10%;
-	position: relative;
-	a {
-		display: inline-block;
-		float: left;	
-		font-size: 14px;
-		padding-right: 20px;
-	}
-	span:nth-child(2){
-	display: inline-block;
-	float: left;
-	font-size: 14px;
-}
-    #texta{
-	    
-	    margin-top: -3px;
-	    position: absolute;
-	    left: 50%;
-	    top: 0;
-	    width: 50%;
-	    margin-left: -25%;
-	    p{
-	        font-size: 16px;
-    	    text-align: center; 
-    	    line-height: 30px;
-    	    display: inline-block;
-	    }
-}
-    span:nth-child(4){
-	display: inline-block;
-	float: right;	
-	font-size: 14px;
-}
-    span:nth-child(5){
-    	display: inline-block;
-    	float: right;	
-    	font-size: 14px;
-    	margin-right: 20px;
-}
-    img{
-    	display: inline-block;
-    	width: 8px;
-    	margin-left: 6px;
-    	cursor: pointer;
-}
-}
+    width: 100%;
+    overflow: hidden;
+    background-color: white;
+    padding: 35px 0 30px;
+    #zhuti {
+        overflow: hidden;
+        background-color: white;
+        margin: 0 10%;
+        position: relative;
+        a {
+            display: inline-block;
+            float: left;
+            font-size: 14px;
+            padding-right: 20px;
+        }
+        span:nth-child(2) {
+            display: inline-block;
+            float: left;
+            font-size: 14px;
+        }
+        #texta {
+            margin-top: -3px;
+            position: absolute;
+            left: 50%;
+            top: 0;
+            width: 50%;
+            margin-left: -25%;
+            p {
+                font-size: 16px;
+                text-align: center;
+                line-height: 30px;
+                display: inline-block;
+            }
+        }
+        span:nth-child(4) {
+            display: inline-block;
+            float: right;
+            font-size: 14px;
+        }
+        span:nth-child(5) {
+            display: inline-block;
+            float: right;
+            font-size: 14px;
+            margin-right: 20px;
+        }
+        img {
+            display: inline-block;
+            width: 8px;
+            margin-left: 6px;
+            cursor: pointer;
+        }
+    }
 }
 
 //section
-section{
-//  margin-top: 100px;
+section {
+    //  margin-top: 100px;
     width: 100%;
     overflow: hidden;
-    background-color:white;
-    #zhanshi{
-    overflow: hidden;    
-    margin: 0 10%;
     background-color: white;
-     ul{
-        width: 100%;
+    #zhanshi {
         overflow: hidden;
-    }
-    .bigdiv{
-        width: 100%;
-        height: 324px;
-    }
-    li{
-        width: 25%;
-        height: 437px;
-        float: left;
-        margin-bottom: 3%;
-        position: relative;
-    }
-    img{
-      width: 95%;
-        height: 324px; 
-        margin: auto;
-        
-    }
-    .jiahao{
-        position: absolute;
-       top: 270px;
-       right: 20px;
-       font-size: 20px;
-       cursor: pointer;
-       font-size: 32px;
-    font-weight: 100;
-    }
-    .contifo{
-        padding: 14px 0 0;
-        a{
-            color: #000;
-            height: 32px;
-            line-height: 16px;
-            display: block;
+        margin: 0 10%;
+        background-color: white;
+        ul {
+            width: 100%;
+            overflow: hidden;
         }
-        p{
-            text-align: right;
-            font-size: 13px;
+        .bigdiv {
+            width: 100%;
+            height: 324px;
         }
-        ol{
-        width: 120px;
-        height: 28px;
-            li{
-                width: 22px;
-                height: 22px;
-                border-radius: 50%;
-                padding: 3px;
-                img{
+        li {
+            width: 25%;
+            height: 437px;
+            float: left;
+            margin-bottom: 3%;
+            position: relative;
+        }
+        img {
+            width: 95%;
+            height: 324px;
+            margin: auto;
+        }
+        .jiahao {
+            position: absolute;
+            top: 270px;
+            right: 20px;
+            font-size: 20px;
+            cursor: pointer;
+            font-size: 32px;
+            font-weight: 100;
+        }
+        .contifo {
+            padding: 14px 0 0;
+            a {
+                color: #000;
+                height: 32px;
+                line-height: 16px;
+                display: block;
+            }
+            p {
+                text-align: right;
+                font-size: 13px;
+            }
+            ol {
+                width: 120px;
+                height: 28px;
+                li {
+                    width: 22px;
+                    height: 22px;
                     border-radius: 50%;
-                    width: 20px;
-                    height: 20px;
+                    padding: 3px;
+                    img {
+                        border-radius: 50%;
+                        width: 20px;
+                        height: 20px;
+                    }
                 }
             }
-    }
+        }
     }
 }
-   
-   
-}
-

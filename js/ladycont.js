@@ -17,3 +17,16 @@ $(window).scroll(function(){
 		
 	}
 })
+$(".jiahao").click(function(){
+	$("#spxq").css({
+		"display":"block"
+	})
+})
+$("#topcb").click(function(){
+	$("#spxq").css({
+		"display":"none"
+	})
+})
+
+
+
